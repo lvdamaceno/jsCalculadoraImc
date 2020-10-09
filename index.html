@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>Calculadora de IMC</title>
+  </head>
+  <body>
+    <div class="container center col s12">
+      <h1 class="center">Calculadora de IMC</h1>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input autofocus id="inputPeso" type="number" />
+          <label for="inputPeso">Informe seu peso em Kl (Kilogramas)</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input autofocus id="inputAltura" type="number" />
+          <label for="inputAltura"
+            >Informe sua altura em Cm (Centímetros)</label
+          >
+        </div>
+      </div>
+      <a class="waves-effect waves-light btn" onclick="calculaIMC()">IMC</a>
+      <h4 id="indiceIMC"></h4>
+      <h6 id="classificacaoIMC"></h6>
+    </div>
+
+    <script defer src="js/script.js"></script>
+  </body>
+</html>
